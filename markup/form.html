@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" placeholder="Enter a text"/>
+        <input type="text" maxlength="10" placeholder="Enter a text another"/>
+        <input type="password" placeholder="Enter a password"/>
+
+        <br/>
+
+        <input type="number"/>
+        <input type="email" placeholder="foo@bar.com"/>
+        <input type="url" id="url" name="earl" required/>
+
+        <br/>
+
+        <input type="search" autofocus list="search-suggestions"/>
+        <datalist id="search-suggestions">
+            <option label="DM" value="Depeche Mode">
+            <option label="Moz" value="Morrissey">
+            <option label="NO" value="New Order">
+            <option label="TC" value="The Cure">
+        </datalist>
+
+        <br/>
+
+        <input type="date"/>
+        <input type="month"/>
+        <input type="time"/>
+
+        <br/>
+
+        <input type="range" required name="range" />
+        <output onforminput="value=range.value">0</output>
+
+        <input type="color"/>
+
+        <br/>
+
+        <label for="vote1">Vote1</label>
+        <input type="checkbox" name="vote1" id="vote1"/>
+        <label for="vote2">Vote2</label>
+        <input type="checkbox" name="vote2" id="vote2"/>
+        <label for="vote3">Vote3</label>
+        <input type="checkbox" name="vote3" id="vote3"/>
+
+        <br/>
+
+        <label for="vote4">Vote4</label>
+        <input type="radio" name="vote4" id="vote4"/>
+        <input type="radio" name="vote4" id="vote4"/>
+        <input type="radio" name="vote4" id="vote4"/>
+
+        <br/>
+
+        <input type="file" multiple/>
+
+        <br/>
+
+        <select name="category" id="category">
+            <option value="beer">Velosport</option>
+            <option value="meat">Computers</option>
+        </select>
+
+        <select name="products" id="products" multiple="multiple">
+            <option value="beer">Beer</option>
+            <option value="meat">Meat</option>
+        </select>
+
+        <br/>
+
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+        <input type="submit" value="OK">
+    </form>
+</body>
+</html>
