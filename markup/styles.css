@@ -1,0 +1,198 @@
+body, div {
+    margin: 0;
+}
+
+body {
+    margin-left: 50px;
+}
+
+a:visited {
+    color: yellow;
+}
+
+.main h1 {
+    color: cadetblue;
+}
+
+.menu {
+    list-style-type: circle;
+}
+
+p {
+    color: #000;
+    padding: 25px;
+    border-left: 2px #000 solid;
+}
+
+.para {
+    color: #111;
+    font-size: 20px;
+}
+
+h2 {
+    color: darkmagenta;
+}
+
+div[class='content'][id] {
+    background: yellow;
+}
+
+div[class$='tent'] {
+    font-size: 20px;
+}
+
+section {
+    padding: 100px 0;
+    display: inline-block;
+}
+
+section > label + input[type='text'] {
+    border: 2px #000 solid;
+}
+
+section > label {
+    color: darkorchid;
+}
+
+section > input + .output {
+    font-size: 20px;
+}
+
+section > input + .output span {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+section article *:first-line {
+    color: #aaa;
+}
+
+section article p::first-letter {
+    color: green;
+    font-size: 30px;
+}
+
+article p ~ span {
+    color: red;
+}
+
+article img[src*='placeholder.com'] {
+    border: 2px #000 solid;
+}
+
+#form {
+    width: 100%;
+    margin-right: 100px;
+    background: #cccccc;
+}
+
+#form label {
+    font-size: 20px;
+    padding: 20px;
+    color: #fff;
+}
+
+#form label ~ .spacer {
+    display: block;
+}
+
+.i:before {
+    content: 'before ';
+    color: green;
+}
+
+.i:after {
+    content: 'after ';
+    color: green;
+}
+
+/*
+
+- Types of styles
+    1. Browser
+    2. Author
+    3. User
+
+
+- Priority tags
+    attribute style
+    tag style
+    tag link
+    browser inner styles
+
+
+- Priority styles
+    browser.css style.css user.css
+    1. selector + !important into user.css
+    2. selector + !important into style.css
+    3. selector into style.css
+    4. selector into user.css
+    5. selector into browser.css > reset.css
+
+
+- Specificity selectors
+
+0           0           0           0
+style=""    #id         .class      <tag>
+
+#container A
+0           1           0           1
+
+.container UL A
+0           0           1           2
+...
+
+
+- Selectors
+
+universal selector
+* {}
+ul * {}
+section article * {}
+
+type selectors
+body {}
+p {}
+
+class selectors
+.class1 {}
+.abcd {}
+
+id selectors
+#ids {}
+#abcd {}
+
+attribute selectors
+img[src~='png'] {}
+a[title] {}
+
+comma combinator selectors
+div, p {}
+body, table {}
+
+descendant selectors
+body table td {}
+ul li li {}
+
+child combinator selectors
+section > label {}
+div > p {}
+
+general sibling combinator selectors
+label ~ input {}
+p ~ span {}
+
+adjacent sibling selectors
+th + tr {}
+label + input {}
+
+pseudo-classes selectors
+a:visited {}
+input:focus {}
+
+pseudo-elements selectors
+p::first-line {}
+.entity:ntd-child(odd) {}
+
+*/

@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="widtd=device-widtd, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ntd-child ntd-last-child ntd-of-type</title>
+    <style>
+        #table-test1 {
+            border: 2px #000 solid;
+            width: 50%;
+            border-collapse: collapse;
+        }
+
+        #table-test1 th {
+            height: 50px;
+            background: #ccc;
+        }
+
+        #table-test1 td {
+            text-align: center;
+        }
+
+        #table-test1 td:nth-of-type(2n) {
+            background: aquamarine;
+        }
+
+        #table-test1 td:nth-of-type(2n-1) {
+            background: pink;
+        }
+
+        #table-test2 {
+            border: 2px #000 solid;
+            width: 50%;
+            border-collapse: collapse;
+            margin-top: 30px;
+        }
+
+        #table-test2 th {
+            height: 50px;
+            background: #ccc;
+        }
+
+        #table-test2 td {
+            text-align: center;
+            height: 40px;
+        }
+
+        #table-test2 td:nth-last-child(2) {
+            background: deeppink;
+        }
+
+        #table-test3 {
+            border: 2px #000 dotted;
+            width: 50%;
+            border-collapse: collapse;
+            margin-top: 30px;
+        }
+
+        #table-test3 th {
+            height: 50px;
+            background: #ccc;
+        }
+
+        #table-test3 td {
+            text-align: center;
+            height: 40px;
+        }
+
+        #table-test3 td:nth-child(3n) {
+            background: deepskyblue;
+        }
+
+        #table-test4 {
+            border: 2px #000 solid;
+            width: 50%;
+            border-collapse: collapse;
+            margin-top: 30px;
+        }
+
+        #table-test4 th {
+            height: 50px;
+            background: #ccc;
+        }
+
+        #table-test4 td {
+            text-align: center;
+            height: 40px;
+        }
+
+        #table-test4 td:nth-child(even) {
+            background: orangered;
+        }
+
+    </style>
+</head>
+<body>
+
+<table id="table-test1">
+    <tr>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>5</th>
+        <th>6</th>
+        <th>7</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+    </tr>
+</table>
+
+<table id="table-test2">
+    <tr>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>5</th>
+        <th>6</th>
+        <th>7</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+    </tr>
+</table>
+
+<table id="table-test3">
+    <tr>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>5</th>
+        <th>6</th>
+        <th>7</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+    </tr>
+</table>
+
+<table id="table-test4">
+    <tr>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>5</th>
+        <th>6</th>
+        <th>7</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+    </tr>
+</table>
+
+</body>
+</html>
