@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Checkboxes selecter</title>
+    <style>
+        .block {
+            width: 50px;
+            height: 50px;
+            padding: 20px;
+            margin-top: 40px;
+            display: none;
+        }
+
+        .red {
+            background: red;
+        }
+
+        .green {
+            background: green;
+        }
+
+        .blue {
+            background: blue;
+        }
+
+        .yellow {
+            background: yellow;
+        }
+
+        .select {
+            padding-top: 20px;
+        }
+
+        .select label {
+            background: #ccc;
+            padding: 20px;
+            cursor: pointer;
+        }
+
+        .select input[type='checkbox'] {
+            display: none;
+        }
+
+        .select #red:checked ~ .output > .red,
+        .select #green:checked ~.output > .green,
+        .select #blue:checked ~.output > .blue,
+        .select #yellow:checked ~.output > .yellow {
+            display: inline-block;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="form-wrapper">
+    <div class="select">
+        <div class="checks">
+            <label for="red">red</label>
+            <input type="checkbox" name="red" id="red"/>
+            <label for="green">green</label>
+            <input type="checkbox" name="green" id="green"/>
+            <label for="blue">blue</label>
+            <input type="checkbox" name="blue" id="blue"/>
+            <label for="yellow">yellow</label>
+            <input type="checkbox" name="yellow" id="yellow"/>
+
+            <div class="output">
+                <div class="block red">red</div>
+                <div class="block green">green</div>
+                <div class="block blue">blue</div>
+                <div class="block yellow">yellow</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+
+</html>
