@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Floats</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .wrapper {
+            background: #555;
+            margin-top: -16px;
+            /*overflow: hidden;*/
+        }
+
+        .block1 {
+            border: 2px tomato solid;
+            float: left;
+            width: 10em;
+            /*height: 100px;*/
+        }
+
+        .block2 {
+            float: right;
+            background: slateblue;
+        }
+
+        .block-menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .block-menu li {
+            width: 100px;
+            float: left;
+            border: 2px yellow solid;
+        }
+
+        .block-menu .sibling {
+            float: right;
+        }
+
+        .clearfix1 {
+            clear: both;
+         }
+
+        .clearfix2:after {
+            content: '';
+            clear: both;
+            display: table;
+        }
+
+        .inner .content {
+            background: teal;
+            overflow: hidden;
+        }
+
+        .inner .content .item {
+            width: 100px;
+            height: 100px;
+            background: #ccc;
+            float: left;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper clearfix2">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias earum, eveniet exercitationem harum hic, iure nam natus possimus, quidem rerum sunt veritatis. Esse, ex ipsam ipsum quam quisquam saepe vel.</p>
+    <div class="block1">block1</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, dignissimos error hic laborum nostrum qui sapiente sequi. Accusamus adipisci architecto deleniti expedita inventore officia perferendis quo quos, repudiandae sapiente soluta?</p>
+    <div class="block2">block2</div>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, dignissimos error hic laborum nostrum qui sapiente sequi. Accusamus adipisci architecto deleniti expedita inventore officia perferendis quo quos, repudiandae sapiente soluta?</p>
+    <ul class="block-menu">
+        <li class="sibling">li1</li>
+        <li>li2</li>
+        <li>li3</li>
+        <li>li4</li>
+        <li>li5</li>
+    </ul>
+    <div class="clearfix1"></div>
+    <div class="inner">
+        <div class="content">
+            <div class="item">item1</div>
+            <div class="item">item2</div>
+            <div class="item">item3</div>
+            <div class="item">item4</div>
+            <div class="item">item5</div>
+            <div class="item">item6</div>
+            <div class="item">item7</div>
+            <div class="item">item8</div>
+            <div class="item">item9</div>
+            <div class="item">item10</div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
