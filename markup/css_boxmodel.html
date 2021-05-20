@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Box Model</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrapper {
+            width: 500px;
+            margin: 150px auto;
+        }
+
+        .box1 {
+            margin: 10px;
+            padding: 10px;
+            border: 10px #000 solid;
+            width: 200px;
+            height: 200px;
+            background: #ccc;
+            box-sizing: border-box;
+        }
+
+        .box2 {
+            margin: 10px;
+            padding: 10px;
+            border: 10px #000 solid;
+            width: 200px;
+            height: 200px;
+            background: #ccc;
+            box-sizing: content-box;  /* default */
+        }
+
+        .box3 {
+            margin: 10px;
+            padding: 15px;
+            border: 5px #000 solid;
+            width: 200px;
+            height: 200px;
+            background: #ccc;
+            box-sizing: padding-box;
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="box1">
+        border-box
+    </div>
+    <div class="box2">
+        content-box
+    </div>
+    <div class="box3">
+        padding-box
+    </div>
+</div>
+
+</body>
+</html>

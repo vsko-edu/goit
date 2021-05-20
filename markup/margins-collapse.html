@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Margins collapse</title>
+    <style>
+        p {
+            background: coral;
+            padding: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        div {
+            background: #000;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: block;
+            box-sizing: border-box;
+        }
+
+        ul li {
+            display: inline;
+            background: orange;
+            padding: 10px 20px;
+            margin: 0 20px;
+        }
+
+        .container {
+            color: #fff;
+        }
+
+        .container-center {
+            color: #fff;
+            background: brown;
+            height: 500px;
+            position: relative;
+        }
+
+        .container-center.add1 {
+            background: darkblue;
+        }
+
+        .container2 {
+            color: #fff;
+            width: 50%;
+            height: auto;
+            /*margin-top: -10px;*/
+            border-top: 1px transparent solid;
+            background: darkgreen;
+        }
+
+        .container3 {
+            width: 300px;
+            border: 1px transparent solid;
+            background: blueviolet;
+        }
+
+        .container4 {
+            height: 300px;
+            border: 1px transparent solid;
+            background: darksalmon;
+        }
+
+        .block1 {
+            background: deeppink;
+        }
+
+        .block2 {
+            padding: 20px;
+            width: 300px;
+            margin: auto; /* default */
+            background: aquamarine;
+        }
+
+        .block3 {
+            padding: 20px;
+            width: 300px;
+            margin-left: auto;
+            background: blueviolet;
+        }
+
+        .block4 {
+            padding: 20px;
+            width: 150px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            background: #aaa;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .block5 {
+            padding: 20px;
+            width: 150px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            background: #aaa;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -75px;
+            margin-top: -50px;
+        }
+
+        .block_bottom {
+            width: 150px;
+            height: 100%;
+            margin-top: 10%;
+            background: #ddd;
+        }
+
+        .block_height {
+            width: 150px;
+            height: 100%;
+            background: #ddd;
+        }
+
+        .line {
+            margin-top: 10px;
+        }
+
+        .spacer {
+            padding-bottom: 20px;
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aspernatur corporis dolorum ducimus eum, exercitationem expedita explicabo hic laboriosam natus necessitatibus neque nesciunt nihil numquam quisquam rem reprehenderit veniam voluptate.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aspernatur corporis dolorum ducimus eum, exercitationem expedita explicabo hic laboriosam natus necessitatibus neque nesciunt nihil numquam quisquam rem reprehenderit veniam voluptate.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aspernatur corporis dolorum ducimus eum, exercitationem expedita explicabo hic laboriosam natus necessitatibus neque nesciunt nihil numquam quisquam rem reprehenderit veniam voluptate.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aspernatur corporis dolorum ducimus eum, exercitationem expedita explicabo hic laboriosam natus necessitatibus neque nesciunt nihil numquam quisquam rem reprehenderit veniam voluptate.</p>
+
+<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto atque autem culpa ducimus laboriosam odio omnis quibusdam voluptas! A ducimus eos, ex excepturi expedita hic laborum natus placeat porro vero?</div>
+
+<span class="spacer"></span>
+
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+</ul>
+
+<span class="spacer"></span>
+
+<div class="container">
+    <div class="block1">
+        content block1
+    </div>
+</div>
+
+<div class="container">
+    <div class="block2">
+        content block2
+    </div>
+</div>
+
+<div class="container">
+    <div class="block3">
+        content block3
+    </div>
+</div>
+
+<div class="container-center">
+    <div class="block4">
+        content block4 center
+    </div>
+</div>
+
+<div class="container-center add1">
+    <div class="block5">
+        content block5 center
+    </div>
+</div>
+
+<div class="container2">
+    <div class="line">content line</div>
+    <div class="line">content line</div>
+    <div class="line">content line</div>
+</div>
+
+<div class="container3">
+    <div class="block_bottom">content block bottom</div>
+</div>
+
+<div class="container4">
+    <div class="block_height">content block height</div>
+</div>
+
+</body>
+</html>
