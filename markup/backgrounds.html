@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Backgrounds</title>
+    <style>
+        html, body {
+            height: 100%;
+            overflow: hidden;
+        }
+        html {
+            /*background: #fff;*/
+        }
+
+        body {
+            background: #ccc url('clipart.png');
+            background-repeat: repeat-x;
+            background-position-x: 100px;
+            background-position-y: -80px;
+            position: relative;
+        }
+
+        .bg-box {
+            color: #111;
+            width: 500px;
+            height: 500px;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #888 url("watermelon.png") no-repeat;
+            background-size: contain;
+        }
+
+        .bg-box .box1 {
+            color: #fff;
+            width: 100px;
+            height: 100px;
+            margin-left: auto;
+            background: #555 url('watermelon.png') no-repeat;
+            background-size: contain;
+        }
+
+        .bg-box .box2 {
+            width: 300px;
+            height: 300px;
+            background: #fff url('watermelon.png') bottom right no-repeat;
+            background-size: 50%;
+            background-clip: border-box;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="bg-box">
+    content
+    <div class="box1">
+        box1
+    </div>
+    <div class="box2">
+        box2
+    </div>
+</div>
+
+</body>
+</html>

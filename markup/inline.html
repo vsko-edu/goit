@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inline elements</title>
+    <style>
+        .container1, .container2 {
+            background: coral;
+        }
+
+        .container1 p, .container2 p {
+            background: antiquewhite;
+            margin: 50px;
+        }
+
+        .container1 a, .container2 a {
+            color: darkgreen;
+            text-decoration: none;
+            border-bottom: 1px darkred solid;
+        }
+
+        .container2 {
+            padding: 1px;
+        }
+
+        .container3 {
+            background: azure;
+        }
+
+        .container3 p {
+            line-height: 5em;
+            background: red;
+        }
+
+        .container4 {
+            line-height: 12px; /* default 1.2 */
+            border-top: 1px #000 dotted;
+        }
+
+        .container4 p {
+            line-height: 10px;
+            background: bisque;
+        }
+
+        .container4 span {
+            line-height: 5;
+            background: darkred;
+        }
+
+        .container5 {
+            background: beige;
+        }
+
+        .container5 span.sub {
+            vertical-align: sub;
+            background: darkred;
+        }
+
+        .container5 img {
+            vertical-align: bottom;
+        }
+
+        /*
+            margin-left
+            margin-right
+            padding-left
+            padding-right
+            vertical-align
+            line-height
+            white-space
+            text-decoration
+            font-size
+            display
+            color
+            background
+            border
+         */
+        .container5 .text {
+            vertical-align: middle;
+            background: cadetblue;
+            border: 10px #000 solid;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container1">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque <a href="#">blanditiis</a> culpa eligendi fugit, magnam minima nulla odio quam quos totam vero voluptates. Aperiam assumenda deleniti eius quas ratione sequi suscipit?</p>
+</div>
+
+<div class="container2">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque <a href="#">blanditiis</a> culpa eligendi fugit, minima nulla odio quam quos totam vero voluptates. Aperiam assumenda deleniti eius quas ratione sequi suscipit?</p>
+</div>
+
+<!-- anonymous text -->
+<div class="container3">
+    <a href="#">a</a>
+    <p></p>
+    text
+</div>
+
+<div class="container4">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, beatae debitis ea impedit magni modi necessitatibus, porro quae sed sit soluta temporibus voluptatum! A cupiditate distinctio ex ipsum tempore.
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto consectetur cupiditate delectus, dicta eos excepturi illo ipsa labore laboriosam laborum modi neque nihil quasi rem sed, <span>asperiores</span>, similique soluta, tenetur voluptas voluptatum. A adipisci autem dolorum earum, esse ex in maiores nesciunt, nobis odit praesentium, quam quos soluta veritatis voluptatem? Dolorem, eveniet illum iure molestiae optio quidem velit! Aspernatur fuga illo iste magni necessitatibus perspiciatis repellendus tempora. A alias amet architecto culpa cum deserunt dicta dignissimos dolor earum eligendi et explicabo facere labore necessitatibus non nostrum perferendis porro quae quaerat quia quod reiciendis repellendus sequi sit suscipit velit, voluptatibus. Nisi.</p>
+</div>
+
+<div class="container5">
+    Lorem ipsum dolor sit amet, <span class="sub">consectetur</span> adipisicing elit. Accusamus architecto <sup>consectetur</sup> cupiditate delectus, dicta eos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aperiam architecto culpa doloremque dolorum earum eos esse fugit ipsam, iure
+    <img src="https://via.placeholder.com/20" alt=""> maiores quasi quibusdam quod <span class="text">magnam</span> repellendus rerum sed tenetur unde vitae.
+</div>
+
+</body>
+</html>
