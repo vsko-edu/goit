@@ -6,8 +6,136 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tables</title>
+    <style>
+        #main-table {
+            width: 500px;
+            border: 1px #aaa solid;
+            margin-bottom: 50px;
+        }
+
+        #main-table caption {
+            caption-side: bottom;
+            color: #fff;
+            background: #555;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        #main-table td {
+            border: 1px #000 solid;
+            text-align: center;
+            text-transform: capitalize;
+        }
+
+        #main-table th {
+            font-size: 20px;
+        }
+
+        .table {
+            width: 500px;
+            display: table;
+            border: 2px #ccc solid;
+            margin-bottom: 50px;
+        }
+
+        .table .caption {
+            color: #fff;
+            padding: 10px;
+            display: table-caption;
+            background: #555;
+            caption-side: bottom;
+        }
+
+        .table .tr {
+            display: table-row;
+        }
+
+        .table .td {
+            display: table-cell;
+            background: #fff;
+        }
+
+        .table .th {
+            display: table-cell;
+            font-weight: bold;
+            background: #ccc;
+        }
+
+        .table .thead {
+            display: table-header-group;
+        }
+
+        .table .tbody {
+            display: table-row-group;
+        }
+    </style>
 </head>
 <body>
+
+<div class="table">
+    <div class="caption">Table description</div>
+    <div class="thead">
+        <div class="tr">
+            <div class="th">text 01</div>
+            <div class="th">text 02</div>
+        </div>
+    </div>
+    <div class="tbody">
+        <div class="tr">
+            <div class="td">cell 01</div>
+            <div class="td">cell 02</div>
+        </div>
+        <div class="tr">
+            <div class="td">cell 01</div>
+            <div class="td">cell 02</div>
+        </div>
+    </div>
+</div>
+
+<table id="main-table">
+    <caption>Table description</caption>
+    <thead>
+    <tr>
+        <th>text 1</th>
+        <th>text 2</th>
+        <th>text 3</th>
+        <th>text 4</th>
+        <th>text 5</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>cell 01</td>
+        <td>cell 02</td>
+        <td>cell 03</td>
+        <td>cell 04</td>
+        <td>cell 05</td>
+    </tr>
+    <tr>
+        <td>cell 01</td>
+        <td>cell 02</td>
+        <td>cell 03</td>
+        <td>cell 04</td>
+        <td>cell 05</td>
+    </tr>
+    <tr>
+        <td>cell 01</td>
+        <td>cell 02</td>
+        <td>cell 03</td>
+        <td>cell 04</td>
+        <td>cell 05</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <td>text 1</td>
+        <td>text 2</td>
+        <td>text 3</td>
+        <td>text 4</td>
+        <td>text 5</td>
+    </tr>
+    </tfoot>
+</table>
 
 <table border="1" width="500" height="500">
     <tr>

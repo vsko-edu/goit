@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu Dropdown</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Farro:wght@300&display=swap" rel="stylesheet">
+    <style>
+        .menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background: tomato;
+            font-size: 0;
+            font-family: 'Farro', sans-serif;
+            position: relative;
+        }
+
+        .menu li {
+            display: inline-block;
+        }
+
+        .menu span,
+        .menu a {
+            color: #fff;
+            font-weight: bold;
+            font-size: 18px;
+            text-decoration: none;
+            text-transform: capitalize;
+            padding: 20px 40px;
+            cursor: pointer;
+        }
+
+        .menu span {
+            display: block;
+            background: #000;
+        }
+
+        .menu a {
+            display: block;
+            background: #000;
+        }
+
+        .menu span:hover,
+        .menu a:hover {
+            background: #7b2010;
+        }
+
+        .menu .submenu {
+            width: 300px;
+            padding: 0;
+            box-shadow: 4px 4px 0 4px #000;
+            display: none;
+        }
+
+        .menu .submenu a {
+            color: #000;
+            background: #fff;
+        }
+
+        .menu .submenu a:hover {
+            color: #7b2010;
+        }
+
+        .menu li:hover .submenu {
+            display: block;
+            position: absolute;
+        }
+
+        .menu li:hover .submenu li {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="container-menu">
+    <ul class="menu">
+        <li><a href="#">link 1</a></li>
+        <li><a href="#">link 2</a></li>
+        <li>
+            <span>link 3</span>
+            <ul class="submenu">
+                <li><a href="#">link 4 1</a></li>
+                <li><a href="#">link 4 2</a></li>
+                <li><a href="#">link 4 3</a></li>
+                <li><a href="#">link 4 4</a></li>
+                <li><a href="#">link 4 5</a></li>
+            </ul>
+        </li>
+        <li>
+            <span>link 4</span>
+            <ul class="submenu">
+                <li><a href="#">link 4 1</a></li>
+                <li><a href="#">link 4 2</a></li>
+                <li><a href="#">link 4 3</a></li>
+            </ul>
+        </li>
+        <li><a href="#">link 5</a></li>
+    </ul>
+</nav>
+
+</body>
+</html>

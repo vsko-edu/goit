@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Show/Hide</title>
+    <style>
+        .container {
+            background: tomato;
+            padding: 20px;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background: #ccc;
+        }
+
+        #showhide1:checked + .box {
+            display: none;
+        }
+
+        #showhide2:checked + .box {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <label for="showhide1">Show/Hide</label>
+    <input type="checkbox" name="showhide1" id="showhide1"/>
+    <div class="box">
+        display: block/none
+    </div>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores cupiditate debitis earum eligendi, eos eum excepturi ipsa iure laudantium libero magnam, non nostrum provident quae suscipit temporibus, unde voluptate voluptatum.
+</div>
+
+<div class="container">
+    <label for="showhide2">Show/Hide</label>
+    <input type="checkbox" name="showhide2" id="showhide2"/>
+    <div class="box">
+        visibility: visible/hidden
+    </div>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa enim fugiat incidunt nisi quisquam, vel! Aliquam consequuntur cum debitis earum illo labore, natus numquam, odio officiis possimus quidem unde voluptate?
+</div>
+
+</body>
+</html>
