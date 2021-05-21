@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Position</title>
+    <style>
+        .container1 {
+            background: #888;
+            position: static;
+        }
+
+        .container1 .block1,
+        .container1 .block2 {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            background: yellowgreen;
+            position: relative;
+            left: 100px;
+        }
+
+        .block3 {
+            width: 150px;
+            height: 150px;
+            background: tomato;
+            position: fixed;
+            z-index: 1000;
+            right: 20px;
+            top: 20px;
+        }
+
+        .block4 {
+            background: sienna;
+            /*padding: 20px;*/
+            /*font-size: 0;*/
+            position: relative;
+            height: 200px;
+
+        }
+
+        .block4 .content1,
+        .block4 .content2 {
+            width: 200px;
+            /*display: inline-block;*/
+            border: 2px black solid;
+            /*margin: 3px;*/
+            position: absolute;
+            top: 30px;
+        }
+
+        .block4 .content1 {
+            background: blueviolet;
+            left: 10px;
+            top: 50px;
+        }
+
+        .block4 .content2 {
+            background: forestgreen;
+            left: 300px;
+        }
+
+        .parent {
+            height: 350px;
+            background: #000;
+            position: relative;
+        }
+
+        .position1 {
+            width: 200px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            background: yellow;
+        }
+
+        .position2 {
+            height: 100px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            background: cornflowerblue;
+        }
+
+        .position3 {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: springgreen;
+        }
+
+        .position4, .position5 {
+            margin: auto;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: sienna;
+        }
+
+        .position5 {
+            margin: auto 0;
+            background: deepskyblue;
+        }
+
+        .position6 {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: rgba(0,0,0,.5);
+            z-index: 8000;
+        }
+
+        .position6 .inner {
+            width: 300px;
+            height: 150px;
+            margin: auto;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: #fff;
+            border: 4px #000 solid;
+            padding: 10px;
+            box-shadow: 10px 10px 1px rgba(0,0,0,.2);
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container1">
+    <div class="block1">block1</div>
+    <div class="block2">block2</div>
+    <div class="block3">block3</div>
+    <div class="block4">
+        <div class="content1">content1</div>
+        <div class="content2">content2</div>
+    </div>
+</div>
+
+<div class="parent">
+    <div class="position1">
+        <div class="position inner">block1 full height</div>
+    </div>
+</div>
+
+<div class="parent">
+    <div class="position2">
+        <div class="position inner">block2 full width</div>
+    </div>
+</div>
+
+<div class="parent">
+    <div class="position3">
+        <div class="position inner">block3 full width & height</div>
+    </div>
+</div>
+
+<div class="parent">
+    <div class="position4">
+        <div class="position inner">block4 center width & height</div>
+    </div>
+</div>
+
+<div class="parent">
+    <div class="position5">
+        <div class="position inner">block5 center height</div>
+    </div>
+</div>
+
+<div class="parent" style="background: tomato">
+    <div class="position6">
+        <div class="position inner">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, libero!</div>
+    </div>
+</div>
+
+<div class="out">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores doloribus fuga necessitatibus officiis quam? Ducimus esse ipsum laboriosam laudantium, nisi possimus similique sunt? Aliquid cumque eaque eius explicabo fuga fugiat ipsa iste maiores mollitia nemo, provident qui quia repellat sit voluptatum! Ad commodi consectetur consequuntur dolor dolores eaque error eum explicabo facilis harum illo ipsa labore laboriosam maxime neque, obcaecati omnis possimus, quasi quibusdam recusandae. Eos molestiae nemo neque odio omnis? Ad aliquam amet aperiam assumenda, autem commodi consequatur cum dicta, earum eveniet, iste laboriosam quaerat repellendus reprehenderit tenetur! Accusantium dicta dolores doloribus hic necessitatibus nulla perspiciatis repellendus voluptatum. Aperiam asperiores assumenda eius eum fugit, hic id, illo mollitia perferendis quod repellendus sunt veritatis vitae. Ad aspernatur consequuntur, cum deleniti deserunt dicta distinctio dolore doloremque ea eos, esse eum excepturi impedit ipsam labore laboriosam maxime odio omnis pariatur quia, ratione sapiente sed sequi soluta tempora voluptas voluptates voluptatibus! Commodi corporis cum dicta dolor dolore, doloremque eius hic ipsam ipsum laborum, libero obcaecati officia placeat quas quidem saepe sed. Ad at, corporis dolorem eius facere fugiat repellat reprehenderit vel. Adipisci aliquid architecto, asperiores commodi consequatur cum deleniti dolore dolores eaque eveniet fugit ipsa iure laboriosam nihil optio possimus quia repellat saepe sit soluta sunt ut velit. Atque cupiditate delectus dicta dignissimos doloribus eaque eligendi facilis illo incidunt maiores, maxime minus molestiae mollitia necessitatibus, nesciunt provident quas, sit sunt tempora temporibus ullam unde ut. A ab, alias animi autem culpa deserunt dicta dolorem eius et eveniet fugit id illo illum molestias nemo neque officia, optio possimus quasi qui quia quibusdam repellat repellendus repudiandae soluta totam, ut. A animi culpa deleniti dolorum eius ex fugit, hic modi nisi nobis numquam officia perspiciatis placeat qui quibusdam ratione reiciendis saepe sequi similique soluta ullam unde ut veniam voluptas voluptatem! Alias aliquam animi aspernatur aut commodi consequuntur doloribus ea eaque esse id illum impedit minima molestiae natus nihil nostrum numquam perferendis, repellat repellendus totam ullam velit vero voluptatum. Blanditiis cumque distinctio esse excepturi expedita harum numquam quaerat quibusdam tempora! Accusantium ad adipisci aperiam aspernatur cumque distinctio earum eius facilis illum incidunt nulla, odit optio quia rerum sapiente similique sit tenetur ullam vitae voluptatum! Aliquid aperiam consequatur corporis deserunt, exercitationem facilis ipsa mollitia nisi perferendis perspiciatis quas, quis reiciendis tempore totam, ut. Beatae culpa dolore doloremque ducimus eaque eos exercitationem facere, laboriosam nam, nihil obcaecati optio porro temporibus veniam veritatis voluptas voluptates. Accusamus alias amet asperiores consequuntur delectus error est exercitationem, facilis fugit incidunt labore necessitatibus nisi officia perferendis praesentium quaerat quam quo sequi, sit tenetur unde veritatis voluptate voluptatibus. Dolore doloremque iste necessitatibus neque sint tempora temporibus velit. Adipisci at ea eos eum fuga hic, illo iure obcaecati, omnis quibusdam similique, tenetur unde velit. Aliquam asperiores impedit iste iusto, laudantium nemo nulla quibusdam veritatis. Consectetur debitis ducimus eaque, esse expedita modi quibusdam unde veritatis! Aut cupiditate dolorem dolores esse expedita libero possimus quas quibusdam temporibus veniam. Architecto esse impedit in molestiae quo? Assumenda esse et quasi vel velit. Autem consequuntur dolorum esse inventore, iusto nesciunt possimus quia soluta? Animi deserunt earum harum ipsam minima molestiae nam nihil nisi nostrum obcaecati odio perspiciatis quo recusandae tempora vel, velit vitae! Ad assumenda blanditiis facere fugiat in incidunt ipsum nulla recusandae? Aut autem consequatur cumque distinctio numquam. Ab amet distinctio ipsam nesciunt odio quidem tempora! Accusamus alias amet atque consequuntur doloremque, dolorum enim eveniet ex facere harum in itaque laboriosam, magni molestias necessitatibus neque nesciunt nisi non officiis perferendis possimus praesentium quia quibusdam quidem quod rem saepe sed tenetur veritatis voluptas. Alias dolorum exercitationem fuga harum incidunt itaque minus necessitatibus odit quas? Adipisci blanditiis, consectetur doloremque doloribus ducimus explicabo fuga impedit iste iure maiores molestiae molestias nemo non rerum sint soluta voluptas! At consequatur deleniti dolores doloribus impedit in, ipsa iusto laboriosam molestias nisi obcaecati quas quos ratione recusandae repudiandae rerum saepe sapiente sequi sit voluptatem. Ab assumenda, at consequuntur cum cumque cupiditate deserunt dignissimos doloremque et facilis fugiat fugit hic in inventore itaque magnam maxime mollitia nam nobis nostrum obcaecati officiis quas quibusdam quis quisquam quos repellendus reprehenderit, suscipit tempora tempore unde vel voluptate voluptatum. Aut consequatur cum cupiditate distinctio ea enim explicabo, fuga in nihil obcaecati. Assumenda consectetur doloribus ducimus fugit impedit iste maxime nemo perferendis repudiandae sapiente. At culpa eligendi, harum possimus similique veritatis voluptatibus! Cupiditate deleniti, doloribus ducimus enim error excepturi expedita fugit, iste magni maiores, nostrum porro quasi quis quod rem repellendus repudiandae voluptatibus! At blanditiis consequatur illum itaque magni maiores molestias neque obcaecati quis, repellendus tempora temporibus totam, vitae. Assumenda consequatur cum cupiditate earum error inventore, labore libero magnam magni molestiae neque nisi odit, placeat possimus repellendus rerum sed. Accusantium aliquam asperiores cumque deleniti dolor ducimus quas vero. Ab accusamus architecto, aspernatur autem beatae, deleniti deserunt eius eos ipsa mollitia natus odit officia, perspiciatis quasi quibusdam sit vitae. A atque doloremque ducimus eveniet ex hic inventore, nesciunt rem ullam vitae? Ad eveniet facere itaque magni quas vel? Ad deleniti dolorum ea natus nobis obcaecati, quod ut. Alias cupiditate deserunt dignissimos, dolores doloribus et inventore ipsa libero maxime, officia quaerat quod tempora vero. Accusamus consectetur consequatur cum cumque dolorum, ducimus esse eum exercitationem facere facilis fugiat hic id in ipsa ipsam itaque libero magnam odit perferendis perspiciatis quaerat quas quia, quibusdam quos repellat repudiandae sequi sint soluta tempore veritatis? Adipisci assumenda atque consectetur corporis deserunt dicta est exercitationem fugit iure odio omnis possimus quas quod quos, saepe, temporibus veritatis. Incidunt ipsum minima nisi quae sunt? Dolores earum, iusto nisi quae saepe sed. A ab blanditiis debitis dolor enim est explicabo facilis impedit in incidunt ipsum itaque labore laborum magnam minus mollitia non officia placeat porro quaerat quod, reiciendis, repellendus repudiandae temporibus tenetur ut voluptate. Consequatur cumque doloribus eaque nemo placeat porro quae, reprehenderit vitae voluptas voluptatem! Accusamus accusantium, aliquam architecto, at atque beatae commodi corporis doloribus eos exercitationem expedita facere fugit ipsam laborum libero magnam magni maxime, minima modi nesciunt non nostrum officia officiis pariatur perspiciatis quam quia quibusdam quis quod repudiandae sed sequi ut voluptatem! Consequuntur deserunt dignissimos error explicabo sit. Amet consequuntur cumque debitis explicabo fugiat, incidunt inventore laborum maiores maxime modi pariatur possimus quae quidem quisquam reiciendis sapiente soluta sunt voluptas voluptatem voluptatibus. Accusamus aperiam assumenda at cum cupiditate, delectus enim est explicabo facere hic ipsam modi nulla omnis rerum sapiente sit soluta, suscipit. Amet cumque doloremque dolores iure nam numquam officia quaerat, suscipit tempora vero. Distinctio ea neque suscipit! Amet atque beatae commodi, culpa dicta distinctio eius eos error expedita facere facilis id neque provident quas sit, suscipit vel. Architecto distinctio magnam, molestiae nihil quae quia rem similique? Ab amet blanditiis cumque dolor eligendi eos error esse est eveniet fugit in nesciunt nostrum, nulla obcaecati pariatur porro praesentium, repellendus unde veniam voluptates. Aperiam architecto blanditiis ipsam neque quo repudiandae! Enim fugit iure iusto magnam magni. Ab adipisci aspernatur blanditiis consectetur debitis deleniti deserunt dicta, ea eos eveniet facere facilis ipsa iste iusto minima quo quos rem repellendus rerum similique sint tenetur vel veniam vero voluptas! A atque autem debitis deserunt error, in magnam officiis recusandae vero. Ab explicabo facilis ipsam itaque libero maxime numquam, quia quidem quod reprehenderit. Asperiores distinctio incidunt itaque neque repellendus totam velit? Atque consectetur cupiditate dolorem esse, explicabo labore nam neque, nobis, non obcaecati placeat reiciendis saepe sint tempora vero. Eligendi enim labore, libero non odit quis reiciendis. Commodi consectetur eaque earum odio officiis quibusdam quisquam quod quos repudiandae suscipit? Alias architecto at commodi consequatur cupiditate debitis deserunt dolore doloremque dolorum eligendi eum ex fuga fugit harum hic id illo in incidunt, magnam magni, maiores, molestiae nulla numquam obcaecati optio pariatur perferendis placeat quia rem soluta sunt tempore vero voluptate. A accusantium architecto atque aut beatae culpa dignissimos doloremque, dolorum earum error et facilis ipsa molestias mollitia neque, nesciunt nisi nobis odit officia provident quasi quibusdam quidem quisquam ratione rerum, sequi tempora ut velit veritatis voluptatibus? A accusamus beatae culpa exercitationem itaque laborum modi numquam odio ut velit? Aliquam amet consequatur cumque dolorum et eum ipsa molestiae nemo obcaecati quae, rem sed sunt. Accusamus aliquid ea modi molestias quis rerum sequi. Ab aspernatur commodi deleniti eos ipsa nisi veritatis vero. Accusamus, aspernatur corporis, earum maxime modi molestias nisi odit, omnis quibusdam quod sint ullam vitae. Dignissimos, hic quidem. Exercitationem ipsa quae rem! Aut in laboriosam neque odit, officiis quo repellat veniam! Aliquam amet architecto debitis ex excepturi facilis fuga hic illo illum itaque laboriosam laudantium minus mollitia, neque nesciunt nostrum, odit officia officiis pariatur velit. Adipisci aliquid asperiores doloribus magnam quasi? Adipisci et illum, mollitia nobis quas qui rerum voluptates. Ad architecto aspernatur cumque cupiditate error excepturi expedita nemo repellat sed ut! Consequuntur eligendi enim eos minus odio recusandae repudiandae sint. Autem deleniti dolor eos placeat quidem quos, recusandae sed voluptas voluptates voluptatibus. Accusamus adipisci atque cum cupiditate exercitationem explicabo ipsam ipsum, odit officia quae quis quo quos rerum sint sit totam, voluptate voluptatibus. Accusantium, assumenda dicta distinctio ducimus id ipsum iure laborum nesciunt nihil nulla, omnis quasi qui quidem quos rerum sed sequi voluptatum. Accusamus accusantium ad amet animi, aperiam assumenda aut blanditiis delectus deleniti dicta dolore doloremque doloribus eligendi est exercitationem fugiat harum iste laborum, magnam magni maiores maxime nobis numquam omnis recusandae repudiandae vel voluptate? Accusantium dolor earum, facilis in nemo nostrum odio omnis optio quam reiciendis repellat repudiandae sed. Dolore dolorem doloremque dolores est eum facere, fugit ipsam libero minus modi odit perspiciatis quaerat quasi quo, quod reiciendis, temporibus vero voluptatum? Consectetur cumque eveniet hic illo illum, in ipsa omnis optio porro, quibusdam reiciendis repellat reprehenderit sed sequi similique. Animi expedita ipsam nesciunt nulla praesentium. Aut autem consectetur cumque dicta eius minima, minus quibusdam repellendus. Assumenda atque consequuntur dolorem numquam tempore. Aut doloribus est eveniet incidunt inventore iusto libero minus neque nostrum officia officiis omnis placeat recusandae tempora, ullam unde vero voluptatem voluptatum! Alias distinctio maxime, nisi nobis porro quod temporibus totam. Alias cupiditate illum non! A ab accusamus ad aliquam, aliquid at aut autem beatae cum cupiditate dolorem eius esse et excepturi hic itaque iusto neque nostrum officiis possimus provident quisquam reprehenderit suscipit temporibus ut velit vitae voluptatibus. A ab at consequatur dignissimos doloribus, eligendi eveniet ex, excepturi illum labore laboriosam libero maxime minus molestiae mollitia nam natus non obcaecati odit possimus quas ratione rerum sed sunt tempora unde vitae voluptate? Enim excepturi ipsum minima reprehenderit sed suscipit tempore voluptatem. A accusantium alias aliquid consectetur dignissimos ex ipsum laborum neque quod similique! Asperiores assumenda doloremque eos facere ipsam libero nemo nobis, numquam omnis saepe! Aut consequatur, consequuntur eius facilis minus nulla quos! Amet aperiam autem beatae consequatur, cum debitis dignissimos dolor doloremque ducimus eveniet facilis ipsum laudantium minus odio provident repellat repudiandae sint tenetur! Amet asperiores commodi culpa eius explicabo facilis illum, ipsa modi perferendis quas quod saepe suscipit unde velit voluptate? Atque dolore dolorum fugit harum illo, itaque maiores maxime natus pariatur placeat, quos repellat soluta tempora tempore tenetur ut velit? Ab accusamus, alias at commodi corporis culpa cum cumque dignissimos distinctio dolores eaque esse eveniet explicabo facere facilis fugiat hic in itaque labore laborum magni nemo nobis nulla omnis quia quisquam ratione reiciendis repellat rerum soluta unde veritatis voluptates voluptatibus? Aliquam consequatur impedit laboriosam, molestias omnis similique ut voluptate? At dolores nihil recusandae totam ut, veritatis? Accusantium amet blanditiis culpa esse exercitationem minus non quo repellendus sunt voluptatum. Alias corporis dignissimos, fugiat inventore labore mollitia numquam, optio quae recusandae repellat repellendus sunt ullam voluptatem. Aperiam libero magni officia perspiciatis rerum soluta unde voluptas voluptatem. Adipisci aperiam cum delectus est excepturi impedit in, labore laudantium nihil nobis perferendis totam veritatis voluptatibus. A aspernatur aut delectus doloremque fuga fugit harum id laboriosam maxime minima nemo nobis officiis possimus quae quasi, qui repudiandae sequi veniam voluptate voluptatem. Architecto at debitis est ex neque pariatur perferendis perspiciatis, repellat sequi similique tempora velit! Architecto beatae blanditiis cum dignissimos dolor ducimus est, ex, facere ipsum omnis quam, qui veritatis voluptatibus! Architecto atque consectetur dolorum exercitationem expedita facilis, harum illum mollitia natus necessitatibus nemo odio praesentium voluptatum. Earum illum ipsa nihil, obcaecati quas quis ratione sunt! Dignissimos dolore eaque eum impedit ipsam laudantium nobis quidem suscipit!</div>
+
+</body>
+</html>
