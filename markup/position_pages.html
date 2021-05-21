@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Position pages</title>
+    <style>
+        .pages {
+            width: 300px;
+            height: 450px;
+            background: #ccc;
+        }
+
+        .pages:before {
+            width: 300px;
+            height: 450px;
+            content: '';
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            z-index: -1;
+            background: #ddd;
+        }
+
+        .pages:after {
+            width: 300px;
+            height: 450px;
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: -1;
+            background: #aaa;
+        }
+    </style>
+</head>
+<body>
+
+<div class="pages">content</div>
+
+</body>
+</html>
