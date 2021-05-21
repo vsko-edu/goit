@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lists</title>
+    <style>
+        ul {
+            list-style-type: circle;
+            list-style-position: inside;
+            background: #555;
+        }
+
+        li {
+            background: #aaa;
+            margin: 4px 0;
+            padding: 5px;
+        }
+
+        .list1 {
+            margin: 0;
+            padding: 0;
+        }
+
+        .list2,
+        .list2 ol,
+        .list2 ul {
+            background: #fff;
+            list-style-position: outside;
+        }
+
+        .list2 li {
+            background: transparent;
+        }
+
+        .list3,
+        .list4,
+        .list3 li,
+        .list4 li {
+            background: transparent;
+        }
+
+        .list3 li {
+            list-style-image: url('menu-arrow.png');
+            list-style-position: outside;
+            margin: 0;
+            padding: 0;
+        }
+
+        .list4 {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .list4 ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            background: transparent;
+        }
+
+        .list4 li {
+            background: url('menu-arrow.png') no-repeat 0 5px;
+            padding-left: 20px;
+        }
+
+        .list5, .list5 li {
+            margin: 0;
+            padding: 0;
+            background: transparent;
+        }
+
+        .list5 {
+            border-top: 2px #000 dotted;
+            padding-top: 10px;
+            margin-top: 20px;
+        }
+
+        .list5 li {
+            padding-top: 5px;
+        }
+
+        .list5 li::marker {
+            content: '\2605  ';
+        }
+    </style>
+</head>
+<body>
+
+<ul class="list1">
+    <li>text</li>
+    <li>text</li>
+    <li>text</li>
+    <li>text</li>
+    <li>text</li>
+    <li>text</li>
+    <li>
+        text
+        <ul>
+            <li>text inner</li>
+            <li>text inner</li>
+            <li>text inner</li>
+            <li>text inner</li>
+            <li>text inner</li>
+            <li>text inner</li>
+            <li>text inner</li>
+        </ul>
+    </li>
+    <li>text</li>
+    <li>text</li>
+    <li>text</li>
+</ul>
+
+<ol class="list2" type="I">
+    <li>text</li>
+    <li>text</li>
+    <li>text</li>
+    <li>text</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cumque eaque earum est explicabo, hic ipsa magnam minus nemo nostrum officiis omnis pariatur provident reiciendis rerum, sapiente tempora voluptate voluptates!</li>
+    <li>text</li>
+    <li>
+        text
+        <ul>
+            <li>text inner</li>
+            <li>text inner</li>
+            <li>text inner</li>
+            <li>text inner</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid deleniti ducimus eum eveniet excepturi exercitationem molestias nulla odit. Aperiam deserunt dolores eveniet non perferendis quisquam tenetur velit. Accusamus adipisci alias animi atque consequatur corporis cumque dignissimos dolorem dolores eligendi eum exercitationem incidunt, ipsam iste iure labore magni nemo neque nostrum, officia qui quia quis quo quos recusandae reiciendis reprehenderit sunt tenetur ullam unde ut veritatis voluptatibus voluptatum! Ab consequuntur eum exercitationem molestiae obcaecati optio quis. Dolores dolorum ducimus eius id in nam quam quas saepe unde voluptate. Accusantium ad aliquid animi aspernatur cupiditate delectus dolorem dolorum eaque enim eos error expedita, explicabo illo in iste iure, natus nemo nesciunt nisi non numquam odio quod ratione recusandae similique suscipit temporibus vel. Animi aut consequatur dolore in nemo possimus temporibus? Blanditiis commodi cumque dicta excepturi fuga fugit maxime, modi numquam perferendis repudiandae? A aliquid amet beatae blanditiis commodi debitis dicta doloribus enim illo impedit labore laborum, modi nam nihil officiis omnis porro qui quibusdam quidem quisquam sequi similique soluta suscipit tempore, totam veritatis voluptates? Animi fugiat id quidem rerum soluta? A alias aliquid amet animi asperiores atque aut consectetur culpa dignissimos dolore dolorem ea eaque enim error esse eveniet expedita facilis illo ipsa itaque labore laborum, neque numquam officia, officiis omnis quasi quisquam reiciendis repellendus repudiandae rerum saepe sapiente, sunt tempore temporibus tenetur totam! A accusamus adipisci amet assumenda commodi consectetur consequatur deleniti dolor dolore earum eum eveniet excepturi facere fugiat id impedit, iusto libero minus, modi molestias necessitatibus neque nihil nobis non pariatur perspiciatis placeat quas recusandae repellat reprehenderit sed sint suscipit totam, ullam voluptas voluptates voluptatibus. A accusamus delectus doloribus fugit impedit, inventore iure labore mollitia natus necessitatibus quam quidem vel veniam! Adipisci amet architecto, consequatur eos error ex in inventore itaque libero maiores obcaecati pariatur quae quis, veritatis voluptatibus?</li>
+            <li>text inner</li>
+            <li>text inner</li>
+        </ul>
+    </li>
+    <li>text</li>
+    <li>text</li>
+    <li>text</li>
+</ol>
+
+<ul class="list3">
+    <li>item 1</li>
+    <li>item 2</li>
+    <li>item 3</li>
+    <li>item 4</li>
+    <li>item 5</li>
+</ul>
+
+<ul class="list4">
+    <li>item 1</li>
+    <li>item 2</li>
+    <li>item 3</li>
+    <li>item 4
+        <ul>
+            <li>item 4 1</li>
+            <li>item 4 2</li>
+            <li>item 4 3</li>
+            <li>item 4 4</li>
+            <li>item 4 5</li>
+        </ul>
+    </li>
+    <li>item 5</li>
+</ul>
+
+<ul class="list5">
+    <li>item 1</li>
+    <li>item 2</li>
+    <li>item 3</li>
+    <li>item 4</li>
+    <li>item 5</li>
+    <li>item 6</li>
+    <li>item 7</li>
+    <li>item 8</li>
+</ul>
+
+</body>
+</html>
