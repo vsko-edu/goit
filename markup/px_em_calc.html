@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sizes: px em ex rem / calc</title>
+    <style>
+        html {
+            font-size: 16px;
+        }
+
+        body {
+            font-size: 15px;
+        }
+
+        .box {
+            font-size: 30px;
+        }
+
+        .px {
+
+        }
+
+        .em {
+            font-size: 2em;
+        }
+
+        .ex {
+            font-size: 1ex;
+        }
+
+        .rem {
+            font-size: 1rem;
+        }
+
+        .calc {
+            background: #ccc;
+            width: calc(25% - 1em);
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- 1 px = 1/96 inch - real size -->
+<!-- 1px = 1 pixel - in css -->
+<!-- 1 em = font-size parent -->
+<!-- 1 ex = font-size em/2 -->
+<!-- 1 rem = font-size html -->
+<!-- 1 % = calc relativity parent -->
+<!-- 1 pt pc cm mm in -->
+<!-- 1 vw 1 vh 1 vmin 1 vmax -->
+
+body text
+<div class="box">
+    <div class="px">string px</div>
+    <div class="em">string em</div>
+    <div class="ex">string ex</div>
+    <div class="rem">string rem</div>
+    <div class="calc">string calc</div>
+</div>
+
+</body>
+</html>
