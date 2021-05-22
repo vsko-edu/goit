@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Data attributes</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            padding: 10px;
+            background: #ccc;
+            border: 4px #aaa solid;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        .box:before {
+            content: attr(data-hello);
+        }
+
+        .box:after {
+            height: 100px;
+            padding: 10px;
+            content: url('https://picsum.photos/40/60');
+            position: absolute;
+            left: 20px;
+            top: 50px;
+            background: #aaa;
+        }
+
+        .tooltip {
+            width: 200px;
+            display: inline-block;
+            position: relative;
+            margin: 10px;
+            cursor: help;
+        }
+
+        .tooltip:before {
+            padding: 5px 10px;
+            content: attr(data-title);
+            position: absolute;
+            left: 3px;
+            top: 20px;
+            background: yellowgreen;
+            color: #fff;
+            display: none;
+        }
+
+        .tooltip:hover:before {
+            display: inline-block;
+        }
+
+        .pagination {
+            width: 40%;
+            background: #ccc;
+            padding: 10px 10px 20px;
+            counter-reset: pages;
+        }
+
+        .pagination header {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .pagination a {
+            color: #fff;
+            font-size: 18px;
+            padding: 3px 10px;
+            margin: 5px;
+            background: #aaa;
+            border: 2px #fff solid;
+            text-decoration: none;
+            counter-increment: pages;
+        }
+
+        .pagination a:hover {
+            color: #aaa;
+            background: #fff;
+        }
+
+        .pagination a:before {
+            content: counter(pages);
+        }
+
+        .attr {
+            margin-top: 30px;
+            padding: 10px;
+            font-size: 30px;
+        }
+
+        .attr:before {
+            content: attr(style);
+        }
+    </style>
+</head>
+<body>
+
+<div class="box" data-hello="Hello! I'm data attribute."></div>
+
+<div class="tooltip" data-title="Help you!">Help me</div>
+
+<section class="pagination">
+    <header>Pagination CSS counter</header>
+    <a href="#1"></a><a href="#2"></a><a href="#3"></a><a href="#4"></a><a href="#5"></a><a href="#6"></a><a
+        href="#7"></a><a href="#8"></a>
+</section>
+
+<section class="pagination" style="background: yellowgreen">
+    <header>Pagination CSS counter</header>
+    <a href="#1"></a><a href="#2"></a><a href="#3"></a><a href="#4"></a><a href="#5"></a><a href="#6"></a><a
+        href="#7"></a><a href="#8"></a>
+</section>
+
+<section class="attr" style="background: tomato; width: 320px; height: 200px;"></section>
+
+</body>
+</html>
