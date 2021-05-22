@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Layouts</title>
+    <style>
+        #layout-1 .container,
+        #layout-12 .container {
+            min-width: 700px;
+            white-space: nowrap;
+            background: #ddd;
+        }
+
+        #layout-1 .container:after {
+            content: '';
+            clear: both;
+            display: table;
+        }
+
+        #layout-1 .container .header {
+            background: #aaa;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        #layout-1 .container .sidebar_left,
+        #layout-1 .container .sidebar_right,
+        #layout-1 .container .content {
+            display: inline-block;
+            white-space: normal;
+            vertical-align: top;
+            min-height: 400px;
+        }
+
+        #layout-1 .container .sidebar_left {
+            background: #7b2010;
+            float: left;
+            width: 16%;
+            margin-left: 2%;
+        }
+
+        #layout-1 .container .content {
+            background: yellowgreen;
+            width: 56%;
+        }
+
+        #layout-1 .container .sidebar_right {
+            background: deepskyblue;
+            float: right;
+            width: 24%;
+            margin-right: 2%;
+        }
+
+        #layout-1 .container .footer {
+            height: 30px;
+            line-height: 30px;
+            padding-left: 50px;
+            background: #aaa;
+        }
+
+        #layout-2 .container {
+            margin-top: 20px;
+            position: relative;
+        }
+
+        #layout-2 .container .sidebar_left,
+        #layout-2 .container .sidebar_right,
+        #layout-2 .container .content {
+            min-height: 400px;
+        }
+
+        #layout-2 .container .sidebar_left,
+        #layout-2 .container .sidebar_right {
+            position: absolute;
+        }
+
+        #layout-2 .container .sidebar_left {
+            left: 0;
+            top: 0;
+            width: 16%;
+            margin-left: 2%;
+            background: deepskyblue;
+        }
+
+        #layout-2 .container .sidebar_right {
+            right: 0;
+            top: 0;
+            width: 24%;
+            margin-right: 2%;
+            background: violet;
+        }
+
+        #layout-2 .container .content {
+            padding: 0 26% 0 18%;
+            background: #fcfc47;
+        }
+
+        #layout-3 {
+            position: relative;
+            height: 400px;
+        }
+
+        #layout-3 .container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #ccc;
+        }
+
+        #layout-3 .container .sidebar_left {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 75%;
+            bottom: 0;
+            background: tomato;
+        }
+
+        #layout-3 .container .top_content {
+            position: absolute;
+            top: 0;
+            left: 25%;
+            right: 0;
+            bottom: 50%;
+            background: #ccc;
+        }
+
+        #layout-3 .container .bottom_content {
+            position: absolute;
+            top: 50%;
+            left: 25%;
+            right: 0;
+            bottom: 0;
+            background: #aaa;
+        }
+
+        #layout-4 {
+            height: 400px;
+            display: flex;
+            display: -webkit-flex;
+            z-index: 8000;
+            margin: auto;
+        }
+
+        #layout-4 nav {
+            width: 200px;
+            background: cornflowerblue;
+        }
+
+        #layout-4 .columns {
+            flex: 1;
+            -webkit-flex: 1;
+        }
+
+        #layout-4 .columns #column1 {
+            height: 50%;
+            background: teal;
+        }
+
+        #layout-4 .columns #column2 {
+            height: 50%;
+            background: orange;
+        }
+
+    </style>
+</head>
+<body>
+
+<section id="layout-1">
+    <div class="container">
+        <div class="header">logo</div>
+        <div class="sidebar_left">sidebar left</div>
+        <div class="content">content</div>
+        <div class="sidebar_right">sidebar right</div>
+        <div class="footer">(c) 2021</div>
+    </div>
+</section>
+
+<section id="layout-2">
+    <div class="container">
+        <div class="sidebar_left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium ad amet est fugit id inventore omnis pariatur quibusdam voluptatibus. Adipisci cumque delectus dolor doloribus ducimus ea excepturi in ipsa labore, minima molestiae nesciunt non possimus quaerat quod quos reprehenderit saepe similique sit, soluta totam ut vitae? Consequuntur cumque dolorem ea earum eius eveniet iste nihil perspiciatis quas repudiandae saepe sequi sint, sit temporibus veniam voluptate voluptates. Ab adipisci alias blanditiis consequuntur cum doloremque enim excepturi exercitationem facere fugiat ipsa iusto, laborum, libero magnam magni nam necessitatibus non odio officia pariatur perferendis perspiciatis praesentium quo quod sit vel voluptates voluptatibus. Doloribus excepturi fuga harum mollitia nisi quas! Amet architecto consequuntur corporis dolorem maiores minus necessitatibus nemo neque nihil praesentium quis saepe, voluptas. Accusamus aliquid animi commodi explicabo harum, impedit in ipsum itaque nesciunt nihil, quibusdam repellat sequi voluptas. Assumenda beatae doloremque facilis nisi odit vero! Beatae corporis dicta magnam nisi.</div>
+        <div class="content">content</div>
+        <div class="sidebar_right">sidebar right</div>
+    </div>
+</section>
+
+<section id="layout-3">
+    <div class="container">
+        <div class="sidebar_left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci, alias corporis cum molestiae obcaecati odit officiis perferendis provident quasi. Delectus deserunt ducimus fugit hic iste molestiae voluptas voluptatum! Debitis eius id itaque molestiae quam veniam voluptatem? Explicabo molestias porro quasi ratione repellat tempore vel! Ab delectus ea hic incidunt itaque sed? Accusantium ad, amet autem cumque cupiditate dolorem dolorum ea enim error et excepturi id illo in itaque iure iusto labore libero molestiae, non officiis perspiciatis, possimus quam quasi quis quisquam quod reiciendis rerum sit totam ut veniam voluptas voluptate voluptatum! Debitis illum ipsum omnis quas quasi qui quis!</div>
+        <div class="top_content">top content</div>
+        <div class="bottom_content">bottom content</div>
+    </div>
+</section>
+
+<!--Task: Learn flexbox detailed-->
+<section id="layout-4">
+    <nav>navigation</nav>
+    <div class="columns">
+        <section id="column1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid consequatur cumque distinctio dolorem eum ipsum, itaque nesciunt nulla perferendis placeat porro qui quia quis quo reiciendis temporibus, totam voluptatum.</section>
+        <section id="column2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam facilis itaque, iure omnis quia quos sapiente tempora ullam voluptate? Amet commodi doloremque eius enim esse maxime quos sunt, voluptate?</section>
+    </div>
+</section>
+
+</body>
+</html>
