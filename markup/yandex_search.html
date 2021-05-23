@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .form {
+            width: 70%;
+            margin: 0;
+            min-width: 500px;
+            background: rgb(239,192,64);
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .form:after {
+            content: '';
+            /*background: rgba(239,192,64, .5);*/
+            border-width: 40px;
+            border-style: solid;
+            border-color: transparent transparent transparent rgb(239,192,64);
+            /*opacity: .5;*/
+            /*padding: 20px;*/
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: -80px;
+            width: 0;
+
+            z-index: -1;
+        }
+
+        .clearfix:after {
+            content: '';
+            clear: both;
+            display: block;
+        }
+
+        .form input {
+            width: 80%;
+            float: left;
+        }
+
+        .form button {
+            float: right;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+
+        .form .helper {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet blanditiis eligendi et hic in incidunt molestias, mollitia odit sapiente temporibus ullam, voluptatibus! Accusamus aperiam aut consequatur facere facilis fugiat.
+<div class="form">
+    <input type="text"/>
+    <button class="submit">Найти</button>
+    <div class="spacer clearfix"></div>
+    <span class="helper">Например, <a href="">советник</a></span>
+</div>
+
+</body>
+</html>

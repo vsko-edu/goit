@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animation</title>
+    <style>
+        .clip_animation {
+            width: 800px;
+            height: 800px;
+            background: black;
+            position: relative;
+        }
+
+        .clip_animation .figure1 {
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            font-size: 30px;
+            text-align: center;
+            background: yellowgreen;
+            position: absolute;
+            left: 100px;
+            top: 0;
+            animation: 2s moveingBox linear infinite;
+        }
+
+        .clip_animation .figure2 {
+            background: tomato;
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            text-align: center;
+            text-transform: uppercase;
+            border-radius: 100%;
+            position: absolute;
+            left: 100px;
+            bottom: 0;
+            /*animation-name: moveingBall;*/
+            /*animation-duration: 1s;*/
+            /*animation-timing-function: ease;*/
+            /*animation-play-state: running;*/
+            /*animation-fill-mode: backwards;*/
+            /*animation-delay: 1s;*/
+            /*animation-direction: reverse;*/
+            /*animation: 1s moveingBall ease infinite;*/
+            animation: .5s ease-in 1s infinite alternate moveingBall;
+        }
+
+        .clip_animation .figure2 span {
+            background: #fff;
+            padding: 5px;
+            opacity: .2;
+        }
+
+        .clip_animation .control {
+            color: #fff;
+        }
+
+        .clip_animation .control .animate {
+            color: blueviolet;
+            font-size: 20px;
+        }
+
+        .clip_animation .control input:checked + .animate {
+            animation: 1s moveText alternate linear infinite;
+        }
+
+        @keyframes moveText {
+            from {
+                margin-left: 0;
+            }
+            100% {
+                color: black;
+                margin-left: 50%;
+            }
+        }
+
+        @keyframes moveingBox {
+            from {
+
+            }
+            20% {
+                left: 350px;
+                top: 50%;
+            }
+            30% {
+                left: 600px;
+            }
+            to {
+                right: 100px;
+            }
+        }
+
+        @keyframes moveingBall {
+            0% {
+                bottom: 200px;
+            }
+            to {
+
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="clip_animation">
+    <div class="figure1">box</div>
+    <div class="figure2"><span>ball</span></div>
+    <div class="control">
+        <label for="running">Run animate</label>
+        <input type="checkbox" id="running"/>
+        <div class="animate">text animate</div>
+    </div>
+</div>
+
+</body>
+</html>
