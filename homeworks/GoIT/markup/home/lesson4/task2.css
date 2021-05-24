@@ -1,0 +1,51 @@
+body,ul,li {
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    height: 40px;
+    text-align: center;
+    background: #a64dff;
+    box-shadow: 1px 1px 8px rgba(100,100,100,.5);
+    overflow: hidden;
+}
+
+.menu a {
+    color: #fff;
+    font: bold 20px Economica, sans-serif;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.menu .nav {
+    width: 578px;
+    display: inline-block;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.menu .nav li {
+    float: left;
+}
+
+.menu .nav a {
+    display: block;
+    padding: 0 15px;
+}
+
+.menu .nav a:hover {
+    color: #aaa;
+    background: #eee;
+}
+
+.menu .more {
+    width: 100px;
+    float: right;
+    margin-right: 15px;
+}
+
+.menu .more a:hover {
+    text-decoration: underline;
+}

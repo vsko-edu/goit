@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Wild Gunman</title>
+    <link rel="stylesheet" href="wildgunman.css"/>
+</head>
+<body>
+
+<div id="wildgunman">
+    <div class="modal">
+        <a href="#"  class="close">x</a>
+        <div class="inner">
+            <h3>Wild Gunman</h3>
+            <p class="text">It's examination work for course GoIT</p>
+            <p class="text-small"><b>Developer:</b> Vitaliy Skorobagatko &lt;info@zoom.net.ua&gt;</p>
+        </div>
+    </div>
+    <div class="overlay">
+        <a id="play" href="#" class="button play">Play</a>
+        <a id="replay" href="#" class="button replay">Replay</a>
+        <a id="continue" href="#" class="button continue">Continue</a>
+    </div>
+    <div class="panel">
+        <div class="scores">
+            <div>
+                <span>You:</span>
+                <span class="count">0</span>
+            </div>
+            <div>
+                <span>Gunman:</span>
+                <span class="count">0</span>
+            </div>
+        </div>
+    </div>
+    <div class="toolbar">
+        <a id="reset" class="button reset" title="Reset">&#4968;</a>
+        <a id="help" class="button help" title="Help">?</a>
+    </div>
+    <div class="message"></div>
+    <div class="screen aim"></div>
+    <div class="panel">
+        <div class="reward">
+            <span>$</span>
+            <span class="count">0</span>
+            <span class="label">Reward</span>
+        </div>
+    </div>
+</div>
+
+<script src="wildgunman.js"></script>
+</body>
+</html>
