@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Layout 16</title>
+  <style>
+    .container {
+      display: -webkit-flex;
+      display: flex;
+      padding: 20px;
+      background: rgb(139, 160, 179);
+    }
+
+    nav {
+      width: 200px;
+      background: rgb(173, 149, 107);
+    }
+
+    .flex-column {
+      -webkit-flex: 1;
+              flex: 1;
+      padding: 10px;
+      background: rgb(70, 28, 179);
+    }
+
+    .container2 {
+      display: -webkit-flex;
+      display: flex;
+      padding: 20px;
+      background: rgb(60, 29, 96);
+    }
+
+    .initial {
+      -webkit-flex: initial;
+      flex: initial;
+      width: 200px;
+      min-width: 100px;
+      background: rgb(219, 182, 128);
+    }
+
+    .none {
+      -webkit-flex: none;
+      flex: none;
+      width: 200px;
+      background: rgb(205, 86, 92);
+    }
+
+    .flex1 {
+      -webkit-flex: 1;
+              flex: 1;
+      background: rgb(237, 167, 17);
+    }
+
+    .flex2 {
+      -webkit-flex: 2;
+              flex: 2;
+      background: rgb(106, 53, 55);
+    }
+
+    .vertical-container {
+      height: 300px;
+      display: -webkit-flex;
+      display:         flex;
+      -webkit-align-items: center;
+              align-items: center;
+      -webkit-justify-content: center;
+              justify-content: center;
+      background: rgb(52, 93, 87);
+    }
+
+    .vertical-container div {
+      background: rgb(198, 153, 53);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <nav>
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+      </ul>
+    </nav>
+    <div class="flex-column">
+      <section>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus minus fugiat autem, consectetur molestias debitis sit repudiandae perferendis consequatur architecto soluta. Voluptatibus quia, soluta molestias sed amet recusandae corporis aliquid!</section>
+      <section>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos tempore vel, iure a unde, ab ipsa sunt repudiandae rerum quas dolorem perferendis tenetur sint nobis magni eum libero, explicabo suscipit.</section>
+    </div>
+  </div>
+
+  <div class="container2">
+    <div class="initial">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, sunt.</div>
+    <div class="none">Lorem ipsum dolor sit amet.</div>
+    <div class="flex1">Lorem ipsum dolor sit amet.</div>
+    <div class="flex2">Lorem ipsum dolor sit amet.</div>
+  </div>
+
+  <div class="vertical-container">
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam labore autem dolorem repellendus illum amet optio animi inventore quis dolores impedit esse officia hic, cupiditate tempore. At, iure, iusto. Fugiat?</div>
+  </div>
+
+</body>
+</html>
