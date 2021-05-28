@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Layout Grid 1</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 40% 30% 30%;
+      /* grid-column-gap: 1em;
+      grid-row-gap: 1em; */
+      grid-gap: 1em;
+    }
+
+    .container > div {
+      background: #083141;
+      padding: 1em;
+    }
+
+    .container > div:nth-child(odd) {
+      background: #8321ba;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div>1Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium provident laudantium voluptatum cupiditate commodi repellat beatae animi eveniet possimus odio delectus aliquam cumque molestias ratione eligendi recusandae non eius illo itaque excepturi, consectetur perferendis eaque, quo veniam. Fugiat voluptas provident ipsa voluptatem cumque adipisci, voluptate expedita itaque, minima suscipit cupiditate reiciendis, ut aspernatur magni vero ipsam explicabo iste iusto inventore quod autem, perspiciatis doloremque soluta. Eos labore modi nesciunt dolor, possimus, aut vero quod, rerum officiis ab excepturi! Deleniti, ullam!
+  </div>
+  <div>2Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere voluptatibus ducimus libero doloribus illum quibusdam obcaecati veniam. Atque sapiente iusto cupiditate facilis quas praesentium! Sequi omnis, natus. Recusandae aliquam, hic.</div>
+  <div>1Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium provident laudantium voluptatum cupiditate commodi repellat beatae animi eveniet possimus odio delectus aliquam cumque molestias ratione eligendi recusandae non eius illo itaque excepturi, consectetur perferendis eaque, quo veniam. Fugiat voluptas provident ipsa voluptatem cumque adipisci, voluptate expedita itaque, minima suscipit cupiditate reiciendis, ut aspernatur magni vero ipsam explicabo iste iusto inventore quod autem, perspiciatis doloremque soluta. Eos labore modi nesciunt dolor, possimus, aut vero quod, rerum officiis ab excepturi! Deleniti, ullam!
+  </div>
+  <div>2Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere voluptatibus ducimus libero doloribus illum quibusdam obcaecati veniam. Atque sapiente iusto cupiditate facilis quas praesentium! Sequi omnis, natus. Recusandae aliquam, hic.</div>
+</div>
+
+</body>
+</html>
