@@ -2,82 +2,54 @@
   box-sizing: border-box;
 }
 
+/* colorizing */
 .col-1.block { background: tomato; }
-.col-2.block { background: green; }
+.col-2.block { background: seagreen; }
 .col-3.block { background: gold; }
-.col-4.block { background: violet; }
-.col-5.block { background: tan; }
+.col-4.block { background: mediumvioletred; }
+.col-5.block { background: darkcyan; }
 .col-6.block { background: gray; }
-.col-7.block { background: rosybrown; }
-.col-8.block { background: orange; }
+.col-7.block { background: brown; }
+.col-8.block { background: darkorange; }
 .col-9.block { background: olive; }
 .col-10.block { background: indigo; }
-.col-11.block { background: brown; }
-.col-12.block { background: blue; }
+.col-11.block { background: mediumslateblue; }
+.col-12.block { background: steelblue; }
 
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6,
-.col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+/* sizing */
+.col-1 { width: 8.33%; }
+.col-2 { width: 16.66%; }
+.col-3 { width: 25%; }
+.col-4 { width: 33.33%; }
+.col-5 { width: 41.66%; }
+.col-6 { width: 50%; }
+.col-7 { width: 58.33%; }
+.col-8 { width: 66.66%; }
+.col-9 { width: 75%; }
+.col-10 { width: 83.33%; }
+.col-11 { width: 91.66%; }
+.col-12 { width: 100%; }
+
+/* floating */
+[class*='col-'] {
   float: left;
+  padding: .5em;
 }
 
-.col-1 {
-  width: 8.33%;
-}
+/* clearfixing */
+.row:before, .row:after { content: ''; display: table; }
+.row:after { clear: both; }
 
-.col-2 {
-  width: 16.66%;
-}
-
-.col-3 {
-  width: 25%;
-}
-
-.col-4 {
-  width: 33.33%;
-}
-
-.col-5 {
-  width: 41.66%;
-}
-
-.col-6 {
-  width: 50%;
-}
-
-.col-7 {
-  width: 58.33%;
-}
-
-.col-8 {
-  width: 66.66%;
-}
-
-.col-9 {
-  width: 75%;
-}
-
-.col-10 {
-  width: 83.33%;
-}
-
-.col-11 {
-  width: 91.66%;
-}
-
-.col-12 {
-  width: 100%;
-}
-
+/* resizing 1000px */
 @media screen and (max-width: 1000px) {
-  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6,
-  .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+[class*='col-']:not([class*='col-12']) {
     width: 50%;
   }
 }
 
+/* resizing 600px */
 @media screen and (max-width: 600px) {
-  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6,
-  .col-7, .col-8, .col-9, .col-10, .col-11 {
-    width: 100%;
+[class*='col-'] {
+    width: 100% !important;
   }
 }
