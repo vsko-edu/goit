@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>prompt()</title>
+  <script>
+    var name = prompt('Enter your name: ', 'Vasiya');
+
+    if (name === 'null') {
+      alert('Good bye anonymouse!');
+    } else {
+      if (confirm('Your are sure ' + name + '?')) {
+        alert('Hello, ' + name + '!');
+      } else {
+        alert('I knew, what you are not ' + name + '!');
+      }
+    }
+  </script>
+</head>
+<body>
+
+</body>
+</html>
